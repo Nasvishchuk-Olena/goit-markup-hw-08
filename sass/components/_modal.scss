@@ -116,7 +116,9 @@
 }
 
 .js-form__input:hover,
-.js-form__comment-textarea:hover {
+.js-form__comment-textarea:hover,
+.js-form__input:focus,
+.js-form__comment-textarea:focus {
     border-color:$button-hero-colour;
 }
 
