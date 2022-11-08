@@ -1,0 +1,118 @@
+/* header */
+
+.element {
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    border-bottom: 1px solid $secondary-border-color;
+}
+
+.logo-studio {
+    display: flex;
+    align-items: center;
+
+    color: $title-text-color;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo-studio__text {
+    color: $accent-color;
+}
+
+.site-nav__link {
+    display: block;
+    color: $secondary-title-color;
+    text-decoration: none;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+    color: $accent-color;
+}
+
+.site-nav__link--current {
+    position: relative;    
+ color: $accent-color;
+}
+
+.site-nav__link--current::after {
+    position: absolute;
+    left: 0px;
+    bottom: -38px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color:$button-hero-colour;
+    border-radius: 2px;
+}
+
+.site-nav {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-left: 94px;
+    gap: 50px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact-link__mail {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link .phone {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link__item+.contact-link__item {
+    margin-left: 40px;
+}
+
+.contact-link__mail,
+.contact-link__phone {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-link__mail:hover,
+.contact-link__mail:focus {
+    color: $accent-color;
+}
+
+.contact-link__phone:hover,
+.contact-link__phone:focus {
+    color: $accent-color;
+}
+
+.header-flex {
+    display: flex;
+}
+
+.contact-link__icon-envelope {
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: currentColor;
+}
