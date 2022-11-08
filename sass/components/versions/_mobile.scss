@@ -1,65 +1,65 @@
- .container {
-     @media screen and (min-width: 480px) 
- {width: 480px;
-padding-left: 15px;
-padding-right: 15px;}
+//  .container {
+//      @media screen and (min-width: 480px) 
+//  {width: 480px;
+// padding-left: 15px;
+// padding-right: 15px;}
    
-}
-.contact-link {
-    @media screen and (min-width: 480px)
-    {display: none;}   
-}
+// }
+// .contact-link {
+//     @media screen and (min-width: 480px)
+//     {display: none;}   
+// }
 
-// hero
+// // hero
 
-.hero{@media screen and (min-width: 480px)
-{width: 480px;}}
+// .hero{@media screen and (min-width: 480px)
+// {width: 480px;}}
 
-// 2 section
+// // 2 section
 
-.section { 
-    @media screen and (min-width: 480px) 
-    {padding-left: 15px;
-        padding-right: 15px;}
-    }
+// .section { 
+//     @media screen and (min-width: 480px) 
+//     {padding-left: 15px;
+//         padding-right: 15px;}
+//     }
 
 
 
-.section-list__item { 
+// .section-list__item { 
 
-    @media screen and (min-width: 480px) 
-        {width: 450px;}}
+//     @media screen and (min-width: 480px) 
+//         {width: 450px;}}
 
     
-    .section-list {
-        @media screen and (min-width: 480px)
-    {display:flex;
-flex-wrap: wrap;}}
+//     .section-list {
+//         @media screen and (min-width: 480px)
+//     {display:flex;
+// flex-wrap: wrap;}}
 
-.button-features{
-    @media screen and (min-width: 480px) {
-        width: 450px;
-    }}
+// .button-features{
+//     @media screen and (min-width: 480px) {
+//         width: 450px;
+//     }}
 
-    .section-list__title{
-        @media screen and (min-width: 480px) {
-    text-align: center;
-        }}
+//     .section-list__title{
+//         @media screen and (min-width: 480px) {
+//     text-align: center;
+//         }}
 
-        // 3 section
-.doing{
-    @media screen and (min-width: 480px)
-{display: none;}}
+//         // 3 section
+// .doing{
+//     @media screen and (min-width: 480px)
+// {display: none;}}
 
 
 
-// 4 section
+// // 4 section
 
-.cards-list{
-    @media screen and (min-width: 480px)
-{display: flex;
-    flex-wrap: wrap;}}
-.cards-list__position{
-    @media screen and (min-width: 480px)
-{width: 450px;}
-&photo {width:100%;}}
+// .cards-list{
+//     @media screen and (min-width: 480px)
+// {display: flex;
+//     flex-wrap: wrap;}}
+// .cards-list__position{
+//     @media screen and (min-width: 480px)
+// {width: 450px;}
+// &photo {width:100%;}}
