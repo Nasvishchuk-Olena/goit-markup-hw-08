@@ -124,7 +124,7 @@ a {
 .site-nav__link--current::after {
   position: absolute;
   left: 0px;
-  bottom: -38px;
+  bottom: -1px;
   display: block;
   content: "";
   width: 100%;
@@ -1084,6 +1084,12 @@ a {
 }
 
 @media screen and (min-width: 480px) {
+  .header-flex {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .contact-link {
     display: none;
   }
@@ -1095,8 +1101,34 @@ a {
   }
 }
 
+.doing {
+  display: none;
+}
+
 @media screen and (min-width: 480px) {
-  .doing {
-    display: none;
+  .section-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section-list__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .button-features {
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section-list__caption {
+    width: calc(100% - 30px);
   }
 }/*# sourceMappingURL=main.css.map */

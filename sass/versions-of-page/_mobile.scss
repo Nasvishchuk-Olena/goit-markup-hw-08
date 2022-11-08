@@ -6,6 +6,12 @@ padding-left: 15px;
 padding-right: 15px;}
 
 }
+
+.header-flex{
+    @media screen and (min-width: 480px)
+{width: 480px;}}
+
+
 .contact-link {
     @media screen and (min-width: 480px)
     {display: none;} }
@@ -15,8 +21,27 @@ padding-right: 15px;}
 .hero{@media screen and (min-width: 480px)
 {width: 480px;}}
 
-// // 2 section
+// // 3 section
 
-.doing{
+.doing{display: none;}
+
+// 2 section
+
+.section-list{
     @media screen and (min-width: 480px)
-{display: none;}}
+    {display: flex;
+    flex-wrap: wrap;}
+}
+
+
+.section-list__title{
+    @media screen and (min-width: 480px)
+{text-align: center;}}
+
+.button-features{ 
+    @media screen and (min-width: 480px)
+{width: calc(100% - 30px / 1);}}
+.section-list__caption {
+    @media screen and (min-width: 480px)
+{width: calc(100% - 30px / 1);
+}}
