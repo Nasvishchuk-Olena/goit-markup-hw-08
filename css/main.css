@@ -31,8 +31,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* width: 1200px; */
-  width: 100%;
+  width: 1200px;
 }
 
 ul {
@@ -816,7 +815,9 @@ a {
 }
 
 .js-form__input:hover,
-.js-form__comment-textarea:hover {
+.js-form__comment-textarea:hover,
+.js-form__input:focus,
+.js-form__comment-textarea:focus {
   border-color: rgb(33, 150, 243);
 }
 
@@ -1072,4 +1073,30 @@ a {
 .cards-set__item:hover .cards-set__description,
 .cards-set__item:focus .cards-set__description {
   opacity: 1;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contact-link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .doing {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
