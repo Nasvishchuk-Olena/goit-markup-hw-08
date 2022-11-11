@@ -1,6 +1,9 @@
 
 
+// utils
+
 @import"./utils/variables";
+// components
 @import"./base/base-styles";
 @import "./components/page-header";
 @import"./components/hero";
@@ -11,4 +14,12 @@
 @import"./components/footer";
 @import"./components/modal";
 @import"./components/portfolio";
+
+
+
+
+// versions
+
+@import"./versions-of-page/mobile-menu";
 @import"./versions-of-page/mobile";
+

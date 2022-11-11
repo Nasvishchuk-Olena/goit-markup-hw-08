@@ -52,7 +52,7 @@
             >
           </li>
         </ul>
-        <button class="border__burger-menu" >
+        <button  class="border__burger-menu js-open-menu" >
           <svg width="40px" height="40px">
         <use href="./images/symbol-defs.svg#icon-menu_40p"></use>
           </svg>
@@ -539,12 +539,29 @@
         </form>
       </div>
     </div>
-<script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
+
+        <!-- mobile-menu -->
+ 
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button  class="mobile-menu__close-button js-close-menu">
+          <svg width="18px" height="18px">
+            <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__link">
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html " class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
