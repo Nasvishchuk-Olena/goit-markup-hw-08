@@ -7,6 +7,7 @@
     background-color:$fifth-background-color;
     padding: 40px;
     display:none;
+
     &.is-open{display: flex;}
 
    &__close-button{position: absolute;
