@@ -1136,9 +1136,14 @@ a {
 
 @media screen and (max-width: 480px) {
   .section-list {
+    width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1147,6 +1152,12 @@ a {
 @media screen and (max-width: 480px) {
   .section-list__title {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-list__item {
+    width: calc(100% - 30px);
   }
 }
 
@@ -1166,18 +1177,41 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .cards-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .cards-list__position {
     width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clients-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  .clients-list__item {
+    width: calc(100% - 15px);
   }
 }/*# sourceMappingURL=main.css.map */

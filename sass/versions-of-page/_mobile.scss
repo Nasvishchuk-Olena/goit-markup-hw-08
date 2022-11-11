@@ -42,7 +42,9 @@ padding-right: 15px;}
 
 .section-list{
     @media screen and (max-width: 480px)
-    {display: flex;
+    {width: 480px;
+        display: flex;
+    flex-direction: column;
     flex-wrap: wrap;}
 }
 
@@ -51,9 +53,18 @@ padding-right: 15px;}
     @media screen and (max-width: 480px)
 {text-align: center;}}
 
-.button-features{ 
-    @media screen and (max-width: 480px)
-{width: calc(100% - 30px / 1);}}
+.section-list__item {@media screen and (max-width: 480px)
+   {width: calc(100% - 30px / 1);} 
+}
+  
+ 
+ 
+ .button-features {
+    @media screen and (max-width: 480px) 
+    {width: calc(100% - 30px / 1);}
+
+   
+}
 .section-list__caption {
     @media screen and (max-width: 480px)
 {width: calc(100% - 30px / 1);
@@ -71,16 +82,35 @@ padding-right: 15px;}
 
 // section 4 
 
+
+
+
 .cards-list{
-    @media screen and (min-width: 480px) 
+    @media screen and (max-width: 480px) 
     {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
     }}
     .cards-list__position {
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 480px) {
                 width: calc(100% - 30px / 1);
             }
     }
 
-   
+//    secton 5
+
+.clients-list{
+    @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+&__item {
+    @media screen and (max-width: 480px) {
+        width: calc(100% - 30px / 2);
+    }}
+}
+
+
+    
