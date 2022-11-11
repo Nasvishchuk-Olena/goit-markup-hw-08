@@ -1083,67 +1083,37 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .header-flex {
     width: 480px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .site-nav {
     display: none;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .contact-link {
     display: none;
   }
 }
 
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button__close {
-  display: none;
-}
-
-.menu-button.is-open .menu-button__close {
-  display: block;
-}
-
-.menu-button.is-open .menu-button__open {
-  display: none;
-}
-
-.menu-container {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
-
 @media screen and (min-width: 480px) {
+  .border__burger-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .hero {
     width: 480px;
   }
 }
 
-.doing {
-  display: none;
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1153,20 +1123,40 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-list__title {
     text-align: center;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .button-features {
     width: calc(100% - 30px);
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-list__caption {
+    width: calc(100% - 30px);
+  }
+}
+
+.doing {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .cards-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .cards-list__position {
     width: calc(100% - 30px);
   }
 }/*# sourceMappingURL=main.css.map */
