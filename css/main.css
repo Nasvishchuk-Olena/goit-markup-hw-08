@@ -1096,7 +1096,7 @@ a {
   right: 25px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .container {
     width: 480px;
     padding-left: 15px;
@@ -1122,6 +1122,11 @@ a {
   }
 }
 
+.border__burger-menu {
+  background-color: #ffffff;
+  border: none;
+  margin: 20px;
+}
 @media screen and (min-width: 480px) {
   .border__burger-menu {
     display: none;
@@ -1131,6 +1136,13 @@ a {
 @media screen and (max-width: 480px) {
   .hero {
     width: 480px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -1178,6 +1190,13 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  .members {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .cards-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1186,14 +1205,25 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 480px) {
   .cards-list__position {
-    width: calc(100% - 30px);
+    width: calc((100% - 30px) / 1);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards-list__photo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1202,16 +1232,54 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
+
 @media screen and (max-width: 480px) {
   .clients-list__item {
-    width: calc(100% - 15px);
+    width: calc((100% - 30px) / 2);
   }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-general-box {
+    width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-box-one {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-box-two {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer-form__field {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
