@@ -53,7 +53,9 @@ padding-top: 60px;}}
     {width: 480px;
         display: flex;
     flex-direction: column;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+justify-content: center;
+align-items: center;}
 }
 
 
@@ -92,13 +94,18 @@ padding-top: 60px;}}
 
 
 
-.members{@media screen and (max-width: 480px)
-{padding-top: 60px;
-padding-bottom: 60px;}}
+.members{
+    @media screen and (max-width: 480px)
+    
+{width: 480px;
+    padding-top: 60px;
+padding-bottom: 60px;
+display: flex;}}
 .cards-list {
      @media screen and (max-width: 480px) 
-    {display: flex;
-        flex-direction: column;
+    {flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }}
     .cards-list__position {
         @media screen and (max-width: 480px) {
@@ -135,22 +142,36 @@ padding-bottom: 60px;}}
 
 // footer   
 
+
+  .footer{@media screen and (max-width: 480px)
+{width: 480px;
+justify-content: center;
+    align-items: center;}}
+
 .footer-general-box {
     @media screen and (max-width: 480px) {
-        width: 480px;
+        
         display: flex;
         flex-direction: column;
+        justify-content: center;
+            align-items: center;
+        
        
     }
 }
 .footer-box-one {
     @media screen and (max-width: 480px)
-   {margin-bottom: 60px;} 
+   {margin-bottom: 60px;
+justify-content: center;
+    align-items: center;} 
+   
 }
-.footer-box-two {
-    @media screen and (max-width: 480px) {
-        margin-bottom: 60px;
-    }}
+.footer-box-two{margin-bottom: 60px;}
+
+.footer-three-box{
+    @media screen and (max-width: 480px)
+{justify-content: center;
+    align-items: center;}}
 
 .footer-form {
     @media screen and (max-width: 480px)
