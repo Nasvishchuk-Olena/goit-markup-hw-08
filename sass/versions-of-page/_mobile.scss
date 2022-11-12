@@ -3,7 +3,9 @@
 @media screen and (max-width: 480px)  
 {width: 480px;
 padding-left: 15px;
-padding-right: 15px;}
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;}
 
 }
 
@@ -11,7 +13,8 @@ padding-right: 15px;}
     @media screen and (max-width: 480px)
 {width: 480px;}}
 
-.site-nav { @media screen and (max-width: 480px)
+.site-nav { 
+    @media screen and (max-width: 480px)
     
 {display: none;}}
 
@@ -121,9 +124,13 @@ display: flex;}}
 
 //    secton 5
 
-.clients {@media screen and (max-width: 480px)
-{padding-top: 60px;
-padding-bottom: 60px;}}
+.clients {
+    @media screen and (max-width: 480px)
+
+{width: 480px;
+    padding-top: 60px;
+padding-bottom: 60px;
+display: flex;}}
 
 .clients-list{
     @media screen and (max-width: 480px) {
@@ -146,12 +153,11 @@ padding-bottom: 60px;}}
   .footer{@media screen and (max-width: 480px)
 {width: 480px;
 justify-content: center;
-    align-items: center;}}
+    align-items: center;
+}}
 
 .footer-general-box {
     @media screen and (max-width: 480px) {
-        
-        display: flex;
         flex-direction: column;
         justify-content: center;
             align-items: center;
@@ -162,21 +168,21 @@ justify-content: center;
 .footer-box-one {
     @media screen and (max-width: 480px)
    {margin-bottom: 60px;
-justify-content: center;
-    align-items: center;} 
+   
+} 
    
 }
 .footer-box-two{margin-bottom: 60px;}
 
-.footer-three-box{
-    @media screen and (max-width: 480px)
-{justify-content: center;
-    align-items: center;}}
 
 .footer-form {
     @media screen and (max-width: 480px)
-{display: flex;
-flex-direction: column;}}
+{
+flex-direction: column;
+}}
 .footer-form__field {margin-bottom: 20px;}
+
+
+
 
 
