@@ -1102,6 +1102,10 @@ a {
   background-color: #fff;
 }
 
+.mobile-menu__link--current {
+  color: var(#2196f3);
+}
+
 .mobile-menu__link {
   font-weight: 500;
   font-size: 40px;
@@ -1169,17 +1173,10 @@ a {
 
 @media screen and (max-width: 480px) {
   .container {
-    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .header-flex {
-    width: 480px;
   }
 }
 
@@ -1207,12 +1204,6 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-  .hero {
-    width: 480px;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .section {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -1221,7 +1212,6 @@ a {
 
 @media screen and (max-width: 480px) {
   .section-list {
-    width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1246,31 +1236,12 @@ a {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .section-list__item {
-    width: calc(100% - 30px);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .button-features {
-    width: calc(100% - 30px);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .section-list__caption {
-    width: calc(100% - 30px);
-  }
-}
-
 .doing {
   display: none;
 }
 
 @media screen and (max-width: 480px) {
   .members {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
     display: -webkit-box;
@@ -1308,7 +1279,6 @@ a {
 
 @media screen and (max-width: 480px) {
   .clients {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
     display: -webkit-box;
@@ -1335,7 +1305,6 @@ a {
 
 @media screen and (max-width: 480px) {
   .footer {
-    width: 480px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1366,8 +1335,10 @@ a {
   }
 }
 
-.footer-box-two {
-  margin-bottom: 60px;
+@media screen and (max-width: 480px) {
+  .footer-box-two {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 480px) {

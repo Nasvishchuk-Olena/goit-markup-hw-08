@@ -1,7 +1,7 @@
 .container {
 
 @media screen and (max-width: 480px)  
-{width: 480px;
+{
 padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
@@ -9,19 +9,16 @@ margin-right: auto;}
 
 }
 
-.header-flex{
-    @media screen and (max-width: 480px)
-{width: 480px;}}
+
 
 .site-nav { 
-    @media screen and (max-width: 480px)
-    
+    @media screen and (max-width: 480px)    
 {display: none;}}
 
 
 .contact-link {
     @media screen and (max-width: 480px)
-    {display: none  ;} }
+    {display: none;} }
 
 .border{
 &__burger-menu 
@@ -37,11 +34,6 @@ margin: 20px;}
 
 // // hero
 
-.hero{@media screen and (max-width: 480px)
-{width: 480px;
-    
-   
-}}
 
 
 
@@ -53,10 +45,10 @@ padding-top: 60px;}}
 
 .section-list{
     @media screen and (max-width: 480px)
-    {width: 480px;
-        display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;}
 }
@@ -67,20 +59,19 @@ align-items: center;}
 {text-align: center;}}
 
 .section-list__item {@media screen and (max-width: 480px)
-   {width: calc(100% - 30px / 1);} 
+{} 
 }
-  
- 
- 
- .button-features {
-    @media screen and (max-width: 480px) 
-    {width: calc(100% - 30px / 1);}
 
-   
+
+
+.button-features {
+    @media screen and (max-width: 480px) 
+    {}
+
 }
 .section-list__caption {
     @media screen and (max-width: 480px)
-{width: calc(100% - 30px / 1);
+{
 }}
 
 
@@ -100,7 +91,7 @@ align-items: center;}
 .members{
     @media screen and (max-width: 480px)
     
-{width: 480px;
+{
     padding-top: 60px;
 padding-bottom: 60px;
 display: flex;}}
@@ -127,8 +118,7 @@ display: flex;}}
 .clients {
     @media screen and (max-width: 480px)
 
-{width: 480px;
-    padding-top: 60px;
+{padding-top: 60px;
 padding-bottom: 60px;
 display: flex;}}
 
@@ -151,7 +141,7 @@ display: flex;}}
 
 
   .footer{@media screen and (max-width: 480px)
-{width: 480px;
+{
 justify-content: center;
     align-items: center;
 }}
@@ -162,7 +152,7 @@ justify-content: center;
         justify-content: center;
             align-items: center;
         
-       
+
     }
 }
 .footer-box-one {
@@ -172,7 +162,9 @@ justify-content: center;
 } 
    
 }
-.footer-box-two{margin-bottom: 60px;}
+.footer-box-two { 
+    @media screen and (max-width: 480px)
+    {margin-bottom: 60px;}}
 
 
 .footer-form {
