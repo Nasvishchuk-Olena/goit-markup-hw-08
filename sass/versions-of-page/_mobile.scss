@@ -1,6 +1,7 @@
 .haeder-flex{
      @media screen and (max-width:480px)
      {width: 480px;
-        }
+     flex-grow:1;
+    justify-content: space-between;  }
     
 }

@@ -1169,5 +1169,11 @@ a {
 @media screen and (max-width: 480px) {
   .haeder-flex {
     width: 480px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }/*# sourceMappingURL=main.css.map */
