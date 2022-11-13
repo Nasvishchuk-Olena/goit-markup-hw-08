@@ -2,7 +2,7 @@
 
 .element {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
 }
 
 .border {
@@ -83,7 +83,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link .phone {
+.contact-link__phone {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
