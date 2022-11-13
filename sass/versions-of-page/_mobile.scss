@@ -2,7 +2,7 @@
      @media screen and (max-width:479px)
      {width:479px;
     
-    justify-content: space-between;  }  
+     }  
 }
 .border__burger-menu{border: none;
 background-color:$primary-background-color;}
@@ -13,10 +13,28 @@ background-color:$primary-background-color;}
 
 .site-nav {
     @media screen and (min-width:480px)
-    {display: block;
-    }}
+{display: flex;
 
+
+    }}
+.border__burger-menu{ 
+    @media screen and (min-width: 480px)
+{display: none;}
+    
+}
 .contact-link {
     @media screen and (min-width:480px) {
-        display: block;}}
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 96px;
+    
+    
+}}
+.contact-link__item {
+    @media screen and (min-width:480px)
+{
+}}
+.element{ 
+    @media screen and (min-width:480px)
+{align-items: baseline;}}
 

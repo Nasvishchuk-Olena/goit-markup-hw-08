@@ -1169,9 +1169,6 @@ a {
 @media screen and (max-width: 479px) {
   .header-flex {
     width: 479px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -1188,12 +1185,35 @@ a {
 
 @media screen and (min-width: 480px) {
   .site-nav {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .border__burger-menu {
+    display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
   .contact-link {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-left: 96px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .element {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }/*# sourceMappingURL=main.css.map */
