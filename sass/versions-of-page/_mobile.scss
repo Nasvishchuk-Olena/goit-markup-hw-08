@@ -1,7 +1,22 @@
-.haeder-flex{
-     @media screen and (max-width:480px)
-     {width: 480px;
-     flex-grow:1;
-    justify-content: space-between;  }
+.header-flex{
+     @media screen and (max-width:479px)
+     {width:479px;
     
+    justify-content: space-between;  }  
 }
+.border__burger-menu{border: none;
+background-color:$primary-background-color;}
+
+.header-flex {
+    @media screen and (min-width:480px)
+{width:768px;}}
+
+.site-nav {
+    @media screen and (min-width:480px)
+    {display: block;
+    }}
+
+.contact-link {
+    @media screen and (min-width:480px) {
+        display: block;}}
+
