@@ -2,10 +2,11 @@
 .border__burger-menu{border: none;
 background-color:$primary-background-color;}
 
-.element{
-    @media screen and (min-width:480px) {
-        justify-content: space-between;
-    }}
+.header-flex {
+    @media screen and (min-width: 480px)
+{display: flex;
+    justify-content: space-between;}}
+
 .border__burger-menu {
     @media screen and (min-width: 480px) {
         display: none;
@@ -13,7 +14,8 @@ background-color:$primary-background-color;}
 }
 .site-nav {
     @media screen and (min-width:768px)
-{display: flex;}}
+{display: flex;
+}}
 
 .contact-link {
     @media screen and (min-width:768px) {
@@ -38,6 +40,6 @@ background-color:$primary-background-color;}
     @media screen and (min-width:768px)
 {margin-left: 0px;}}
 
-// desktop
+// // desktop
 
-.header-flex{}
+// .header-flex{}
