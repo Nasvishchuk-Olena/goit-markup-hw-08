@@ -1182,15 +1182,42 @@ a {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .header-flex {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .header-flex {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-flex {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
   }
 }
 
 @media screen and (min-width: 480px) {
+  .site-nav__link--current::after {
+    bottom: -31px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .border__burger-menu {
     display: none;
   }
@@ -1206,6 +1233,12 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .site-nav__link {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .contact-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1215,27 +1248,19 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
-    margin-left: 96px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
     font-size: 12px;
+    padding: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contact-link__mail {
+  .element {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .element {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
