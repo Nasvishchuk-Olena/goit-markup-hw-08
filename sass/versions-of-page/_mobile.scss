@@ -13,7 +13,9 @@ background-color:$primary-background-color;}
 }
 
 .header-flex {
-    @media screen and (min-width: 480px) {justify-content: space-between;}}
+    @media screen and (min-width: 480px) {justify-content: space-between;
+    }
+}
 .header-flex {
     @media screen and (min-width: 768px){flex-grow: 0;}}
 .site-nav__link--current::after{@media screen and (min-width: 480px)
@@ -36,15 +38,11 @@ margin-left: 88px;}}
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 96px;
+    margin-left:auto;
     align-items: baseline; 
     font-size: 12px; 
     padding: 0;
 }}
-.contact-link__icon-envelope{
-    @media screen and (min-width:768px)
-{width: 10px;
-height: 14px;}}
 
 .element{ 
     @media screen and (min-width:768px)
@@ -56,14 +54,35 @@ height: 14px;}}
     @media screen and (min-width:768px)
 {margin-left: 0px;}}
 
+// .contact-link__icon-envelope {
+//         @media screen and (min-width:768px) {
+//             width: 10px;
+//             height: 14px;
+//         }
+//     }
+
 .contact-link {
     @media screen and (min-width:1200px) {
         flex-direction: inherit;
         gap: 30px;
-        font-size: 14px;
-        line-height: 1.14;
+        
     }}
+    .contact-link__mail, .contact-link__phone {
+       @media screen and (min-width:1200px)
 
-// // desktop
+    {font-size: 14px;
+    line-height: 1.14;
+}}
 
-// .header-flex{}
+ .logo-studio{
+        @media screen and (min-width:1200px)
+        {font-size: 26px;}}
+
+
+
+// Hero
+
+.hero { background-image: url("/images/hero-mobile-x1.jpg");
+background-size: cover;}
+
+

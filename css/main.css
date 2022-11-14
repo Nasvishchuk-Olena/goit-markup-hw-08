@@ -217,8 +217,8 @@ a {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1251,19 +1251,12 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
-    margin-left: 96px;
+    margin-left: auto;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
     font-size: 12px;
     padding: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contact-link__icon-envelope {
-    width: 10px;
-    height: 14px;
   }
 }
 
@@ -1288,7 +1281,23 @@ a {
         -ms-flex-direction: inherit;
             flex-direction: inherit;
     gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-link__mail, .contact-link__phone {
     font-size: 14px;
     line-height: 1.14;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-studio {
+    font-size: 26px;
+  }
+}
+
+.hero {
+  background-image: url("/images/hero-mobile-x1.jpg");
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
