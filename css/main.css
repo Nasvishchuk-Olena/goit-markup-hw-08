@@ -1184,9 +1184,6 @@ a {
 
 @media screen and (min-width: 480px) {
   .header-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1204,6 +1201,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 88px;
   }
 }
 
@@ -1216,11 +1214,12 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 96px;
     gap: 10px;
+    margin-left: 96px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    font-size: 12px;
   }
 }
 
@@ -1232,7 +1231,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .element {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -1243,5 +1242,14 @@ a {
 @media screen and (min-width: 768px) {
   .contact-link__item + .contact-link__item {
     margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-link {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
   }
 }/*# sourceMappingURL=main.css.map */

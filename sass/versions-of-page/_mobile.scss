@@ -2,29 +2,30 @@
 .border__burger-menu{border: none;
 background-color:$primary-background-color;}
 
-.header-flex {
+.header-flex{
     @media screen and (min-width: 480px)
-{display: flex;
-    justify-content: space-between;}}
+{justify-content: space-between;}}
 
 .border__burger-menu {
     @media screen and (min-width: 480px) {
-        display: none;
+    display: none;
     }
 }
 .site-nav {
     @media screen and (min-width:768px)
 {display: flex;
-}}
+margin-left: 88px;}}
 
 .contact-link {
     @media screen and (min-width:768px) {
     display: flex;
     flex-direction: column;
-    margin-left: 96px;
     gap: 10px;
-    align-items: baseline;   
+    margin-left: 96px;
+    align-items: baseline; 
+    font-size: 12px;  
 }}
+
 .contact-link__mail {
     @media screen and (min-width:768px) {
         align-items: center;
@@ -32,13 +33,17 @@ background-color:$primary-background-color;}
 }
 
 .element{ 
-    @media screen and (min-width:768px)
+    @media screen and (min-width:480px)
 {align-items: baseline;}}
 
 
 .contact-link__item+.contact-link__item{
     @media screen and (min-width:768px)
 {margin-left: 0px;}}
+.contact-link {
+    @media screen and (min-width:1200px) {
+        flex-direction: inherit;
+    }}
 
 // // desktop
 
