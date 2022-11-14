@@ -1248,6 +1248,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+    margin-left: 96px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;

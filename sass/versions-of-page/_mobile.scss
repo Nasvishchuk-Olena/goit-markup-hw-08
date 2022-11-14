@@ -30,12 +30,13 @@ background-color:$primary-background-color;}
 margin-left: 88px;}}
 .site-nav__link{@media screen and (min-width:768px)
 {padding: 0;}}
+
 .contact-link {
     @media screen and (min-width:768px) {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    // margin-left: 96px;
+    margin-left: 96px;
     align-items: baseline; 
     font-size: 12px; 
     padding: 0;
