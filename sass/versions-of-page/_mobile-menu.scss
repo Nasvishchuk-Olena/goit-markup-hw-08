@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 480px;
-    // height: 796px;
+    
     overflow: hidden;
     background-color:$fifth-background-color;
     padding: 40px 48px;
@@ -23,7 +23,7 @@ border:none;
 background-color: #fff;}   
 }
 .mobile-menu__item:not(:last-child){margin-bottom: 35px;}
-.mobile-menu__link--current {color: $accent-color;}
+.mobile-menu__link.mobile-menu__link--current {color: $accent-color;}
 .mobile-menu__nav{margin-bottom: 302px;}
 
 .mobile-menu__link{

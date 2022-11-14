@@ -217,17 +217,22 @@ a {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   padding: 200px 0;
-  max-width: 1600px;
   margin: 0 auto;
+  background-image: url("../images/Hero-phone-1x.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: url("../images/Hero-phone-1x.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-size: cover;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/Hero-phone-2x.jpg");
+  }
+}
 .hero__title {
   margin-bottom: 30px;
   color: #ffffff;
@@ -1117,7 +1122,7 @@ a {
   margin-bottom: 35px;
 }
 
-.mobile-menu__link--current {
+.mobile-menu__link.mobile-menu__link--current {
   color: #2196f3;
 }
 
@@ -1199,14 +1204,6 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .header-flex {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -1301,7 +1298,8 @@ a {
   }
 }
 
-.hero {
-  background-image: url("/images/hero-mobile-x1.jpg");
-  background-size: cover;
+@media (min-width: 480px) {
+  .hero {
+    background-image: url("/images/Hero-desktop-1x.jpg");
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -12,10 +12,11 @@ background-color:$primary-background-color;}
     }
 }
 
-.header-flex {
-    @media screen and (min-width: 480px) {justify-content: space-between;
-    }
-}
+// .header-flex {
+//     @media screen and (min-width: 480px) 
+//     {justify-content: space-between;
+//     }
+// }
 .header-flex {
     @media screen and (min-width: 768px){flex-grow: 0;}}
 .site-nav__link--current::after{@media screen and (min-width: 480px)
@@ -82,7 +83,15 @@ margin-left: 88px;}}
 
 // Hero
 
-.hero { background-image: url("/images/hero-mobile-x1.jpg");
-background-size: cover;}
+@media (min-width:768px)
+{
+.hero {background-image: url("../images/Hero-tablet-1x.jpg");}
+@media (min-resolution: 2dppx) 
+{background-image: url("/images/Hero-tablet-2x.jpg");} } 
 
+@media (min-width:1200px) {
+    .hero {background-image: url("../images/Hero-desktop-1x.jpg");}
 
+@media (min-resolution: 2dppx) 
+{background-image: url("../images/Hero-desktop-2x.jpg");}
+}
