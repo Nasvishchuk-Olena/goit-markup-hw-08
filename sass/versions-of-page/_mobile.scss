@@ -41,7 +41,10 @@ margin-left: 88px;}}
     font-size: 12px; 
     padding: 0;
 }}
-
+.contact-link__icon-envelope{
+    @media screen and (min-width:768px)
+{width: 10px;
+height: 14px;}}
 
 .element{ 
     @media screen and (min-width:768px)
@@ -52,9 +55,13 @@ margin-left: 88px;}}
 .contact-link__item+.contact-link__item{
     @media screen and (min-width:768px)
 {margin-left: 0px;}}
+
 .contact-link {
     @media screen and (min-width:1200px) {
         flex-direction: inherit;
+        gap: 30px;
+        font-size: 14px;
+        line-height: 1.14;
     }}
 
 // // desktop

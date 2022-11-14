@@ -1261,6 +1261,13 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .contact-link__icon-envelope {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .element {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1280,5 +1287,8 @@ a {
     -webkit-box-direction: inherit;
         -ms-flex-direction: inherit;
             flex-direction: inherit;
+    gap: 30px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }/*# sourceMappingURL=main.css.map */
