@@ -6,9 +6,10 @@
 .section-list {
   display: flex;
   flex-direction: column;
-  // gap: 30px;
+
+  @media screen and (max-width: 767px){
 &__item:not(:last-child){margin-bottom: 30px;}
-}
+}}
 
 .section-list__title {
   margin-bottom: 10px;

@@ -60,8 +60,10 @@ header {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -221,7 +223,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   margin: 0 auto;
   background-image: url("../images/Hero-phone-1x.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
   background-image: url("../images/Hero-phone-1x.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
@@ -237,7 +239,7 @@ a {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -283,8 +285,10 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.section-list__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .section-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .section-list__title {
@@ -325,6 +329,7 @@ a {
 
 /* section 3 */
 .doing {
+  display: none;
   padding-bottom: 94px;
 }
 
@@ -390,17 +395,24 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .members {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
 .members__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: #212121;
   font-size: 36px;
@@ -422,7 +434,7 @@ a {
 }
 
 .cards-list__position {
-  width: calc((100% - 90px) / 4);
+  width: calc((100% - 30px) / 1);
   background-color: rgb(255, 255, 255);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1307,24 +1319,46 @@ a {
 
 @media (min-width: 768px) {
   .hero {
-    background-image: url("../../images/Hero-tablet-1x.jpg");
+    background-image: url("../../images/Hero-tablet-1x.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../../images/Hero-tablet-1x.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx), (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: url("../../images/Hero-tablet-2x.jpg");
+    background-image: url("../../images/Hero-tablet-2x.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../../images/Hero-tablet-2x.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media (min-width: 1200px) {
   .hero {
-    background-image: url("../../images/Hero-desktop-1x.jpg");
+    background-image: url("../../images/Hero-desktop-1x.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../../images/Hero-desktop-1x.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: url("../../images/Hero-desktop-2x.jpg");
+    background-image: url("../../images/Hero-desktop-2x.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../../images/Hero-desktop-2x.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
+@media (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-list {
+    margin: -15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section-list__item {
     width: calc((100% - 60px) / 2);
@@ -1347,9 +1381,56 @@ a {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .section-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section {
-    margin: -15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .doing {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cards-list__position {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cards-list__position {
+    width: calc((100% - 90px) / 4);
+  }
+  .members {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .members__title {
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=main.css.map */
