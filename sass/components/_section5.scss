@@ -8,12 +8,12 @@
 }
 
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .clients-list__item {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px) / 2);
 }
 
 .clients-list__link {
@@ -38,4 +38,6 @@
 .clients-list {
     display: flex;
     gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

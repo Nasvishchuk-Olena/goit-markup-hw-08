@@ -501,12 +501,12 @@ a {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-list__item {
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
 }
 
 .clients-list__link {
@@ -539,13 +539,19 @@ a {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* footer */
 .footer {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
@@ -630,6 +636,45 @@ a {
   background-color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-general-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-social-title {
+    text-align: center;
+  }
+  .footer-box-two {
+    margin-bottom: 60px;
+    margin-left: 0px;
+  }
+  .logo-studio.footer__logo-studio {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .adress-link {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .footer-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-form__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-three-box {
+    margin-left: 0px;
+  }
+  .footer-field-label {
+    text-align: inherit;
+  }
+}
 .footer-general-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,10 +682,6 @@ a {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.footer-box-two {
-  margin-left: 70px;
 }
 
 .footer-social-title {
@@ -651,6 +692,10 @@ a {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+
+.footer-box-two {
+  margin-left: 70px;
 }
 
 .footer-three-box {
@@ -1432,5 +1477,19 @@ a {
   }
   .members__title {
     margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients-list__item {
+    width: calc((100% - 150px) / 6);
   }
 }/*# sourceMappingURL=main.css.map */
