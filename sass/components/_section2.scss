@@ -1,16 +1,18 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
  
 }
 .section-list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 
 }
 
 .section-list__title {
   margin-bottom: 10px;
+  text-align: center;
 
   color: $secondary-title-color;
   font-size: 14px;
@@ -30,13 +32,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
   background-color: $fourth-background-color;
-  width: 270px;
+  // width: 270px;
   height: 120px;
+  
   border: none;
   margin-bottom: 30px;
   border: 4px;
   border-radius: 4px; 
   
   }
+  .section-list__item{
+    width: calc((100% - 30px) / 1);}
