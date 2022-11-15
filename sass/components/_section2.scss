@@ -6,8 +6,8 @@
 .section-list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-
+  // gap: 30px;
+&__item:not(:last-child){margin-bottom: 30px;}
 }
 
 .section-list__title {
@@ -44,5 +44,3 @@
   border-radius: 4px; 
   
   }
-  .section-list__item{
-    width: calc((100% - 30px) / 1);}

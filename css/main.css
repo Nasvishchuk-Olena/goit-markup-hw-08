@@ -282,7 +282,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+}
+.section-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .section-list__title {
@@ -319,10 +321,6 @@ a {
   margin-bottom: 30px;
   border: 4px;
   border-radius: 4px;
-}
-
-.section-list__item {
-  width: calc((100% - 30px) / 1);
 }
 
 /* section 3 */
@@ -1325,5 +1323,32 @@ a {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi) {
   .hero {
     background-image: url("../../images/Hero-desktop-2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-list__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-list__item .section {
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-list__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */

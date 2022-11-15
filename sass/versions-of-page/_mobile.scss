@@ -95,3 +95,22 @@ margin-left: 88px;}}
 
 // section2
 
+.section-list__item {
+    @media screen and (min-width:768px)
+   {width: calc((100% - 60px) / 2);
+margin: 15px;
+}
+.section {
+    @media screen and (min-width:768px)
+{margin: -15px;}}
+
+   @media screen and (min-width:1200px) {
+       width: calc((100% - 90px) / 4);
+   }
+}
+.section-list {
+    @media screen and (min-width:768px)
+    {flex-direction: row;
+        flex-wrap: wrap;
+   }
+}
