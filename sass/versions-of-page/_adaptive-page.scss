@@ -190,6 +190,60 @@ width: calc((100% - 90px) / 4);}
 
 // Footer
 
-@media screen and (max-width: 767px){
 
+@media screen and (max-width:767px) {
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .footer-general-box {
+        flex-direction: column;
+    }
+
+    .footer-social-title {
+        text-align: center;
+    }
+
+    .footer-box-two {
+        margin-bottom: 60px;
+        margin-left: 0px;
+    }
+
+    .logo-studio.footer__logo-studio {
+        justify-content: center;
+        // margin-bottom: 20px;
+    }
+
+    .adress-link {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .footer-form {
+        flex-direction: column;
+
+        &__input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-three-box {
+        margin-left: 0px;
+    }
+
+    .footer-field-label {
+        text-align: center
+    }
+}
+
+@media screen and(min-width:1200px) {
+    .footer-box-two {
+        margin-left: 70px;
+    }
+
+    .footer-three-box {
+        margin-left: 93px;
+    }
 }
