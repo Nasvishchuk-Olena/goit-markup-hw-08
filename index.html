@@ -172,9 +172,39 @@
           <h2 class="members__title">Наша команда</h2>
           <ul class="cards-list">
             <li class="cards-list__position">
-              <img class="cards-list__photo" class="cards-list__photo" 
+
+              <source
+                  srcset="
+                    ./images/members-1-desktop-1x.jpg 1x,
+                    ./images/members-1-desktop-2x@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              
+                <source
+                  srcset="
+                    ./images/members-1-planshet-1x.jpg    1x,
+                    ./images/members-1-planshet-2x.jpg@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+              
+                <source
+                  srcset="
+                    ./images/members-1-phone-1x.jpg 1x,
+                    ./images/members-1-phone-2x@2x.jpg 2x
+                  "
+                
+                />
+                <img
+                  class="image"
+                  src="./images/members-1-phone-1x.jpg"
+                  alt="дизайнер продукту"
+                />
+              </picture>
+              <!-- <img class="cards-list__photo" class="cards-list__photo" 
               srcset="./images/img1.jpg 1x, ./images/cards-list-1-2x@2x.jpg 2x"
-              src="./images/img1.jpg" alt="Фото Ігоря" width="270" />
+              src="./images/img1.jpg" alt="Фото Ігоря" width="270" /> -->
               <div class="cards-list__info">
                 <h3 class="cards-list__name">Ігор Дем'яненко</h3>
                 <p class="cards-list__content">Product Designer</p>
@@ -212,9 +242,35 @@
             </li>
 
             <li class="cards-list__position">
-              <img class="cards-list__photo" 
-              srcset="./images/img2.jpg 1x, ./images/cards-list-2-2x@2x.jpg 2x"
-              src="./images/img2.jpg" alt="Фото Ольги" width="270" />
+              <source
+                  srcset="./images/members-2-desktop-1x.jpg,
+                  
+                    ./images/members-2-desktop-2x@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              
+                <source
+                  srcset="
+                    ./images/members-2-planshet-1x.jpg   1x,
+                    ./images/members-2-planshet-2x@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+              
+                <source
+                  srcset="
+                    ./images/members-2-phone-1x.jpg    1x,
+                    ./images/members-2-phone-2x@2x.jpg 2x
+                  "
+                
+                />
+                <img
+                  class="image"
+                  src="./images/members-2-phone-1x.jpg"
+                  alt="дизайнер продукту"
+                />
+              </picture>
               <div class="cards-list__info">
                 <h3 class="cards-list__name">Ольга Рєпіна</h3>
                 <p class="cards-list__content">Frontend Developer</p>
@@ -252,9 +308,35 @@
             </li>
 
             <li class="cards-list__position">
-              <img class="cards-list__photo" 
-              srcset="./images/img3.jpg 1x, ./images/cards-list-3-2x@2x.jpg 2x"
-              src="./images/img3.jpg" alt="Фото Миколи" width="270" />
+              <source
+                  srcset="
+                    ./images/members-3-desktop-1x.jpg 1x,    1x,
+                    ./images/members-3-desktop-2x@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              
+                <source
+                  srcset="
+                    ./images/members-3-planshet-1x.jpg 1x,
+                    ./images/members-3-planshet-2x@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+              
+                <source
+                  srcset="
+                    ./images/members-3-phone-1x.jpg 1x,
+                    ./images/members-3-phone-2x@2x.jpg 2x
+                  "
+                
+                />
+                <img
+                  class="image"
+                  src="./images/members-3-phone-1x.jpg"
+                  alt="дизайнер продукту"
+                />
+              </picture>
               <div class="cards-list__info">
                 <h3 class="cards-list__name">Микола Тарасов</h3>
                 <p class="cards-list__content">Marketing</p>
@@ -292,9 +374,33 @@
             </li>
 
             <li class="cards-list__position">
-              <img class="cards-list__photo"  
-              srcset="./images/img4.jpg 1x, ./images/cards-list-4-2x@2x.jpg 2x"
-              src="./images/img4.jpg" alt="Фото Михайла" width="270" />
+              <source
+                  srcset="
+                    ./images/members-4-desktop-1x.jpg 1x,
+                    ./images/members-4-desktop-2x@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              
+                <source
+                  srcset="./images/members-4-planshet-1x.jpg 1x,
+                    ./images/members-4-planshet-2x@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+              
+                <source
+                  srcset="./images/members-4-phone-1x.jpg 1x,
+                  ./images/members-4-phone-2x@2x.jpg 2x
+                  "
+                
+                />
+                <img
+                  class="image"
+                  src="./images/members-4-phone-1x.jpg"
+                  alt="дизайнер продукту"
+                />
+              </picture>
               <div class="cards-list__info">
                 <h3 class="cards-list__name">Михайло Єрмаков</h3>
                 <p class="cards-list__content">UI Designer</p>
@@ -392,7 +498,6 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-general-box">
-          <div class="footer-planshet">
             <div class="footer-box-one">
             <a href="" class="logo-studio footer__logo-studio"
               ><span class="logo-studio__text">Web</span>Studio</a
@@ -453,7 +558,7 @@
               </li>
             </ul>
           </div>
-          </div>
+          
           <div class="footer-three-box">
             <p class="footer-field-label">Підпишіться на розсилку</p>
             <form class="footer-form">
@@ -563,7 +668,7 @@
     <div class="mobile-menu js-menu-container">
       <div class="container">
         <button class="mobile-menu__close-button js-close-menu">
-          <svg width="40px" height="40px">
+          <svg class="mobile-menu__icon" width="40px" height="40px">
             <use href="./images/symbol-defs.svg#icon-close_40px"></use>
           </svg>
         </button>
