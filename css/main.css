@@ -1490,6 +1490,9 @@ a {
     width: 100%;
     margin-bottom: 20px;
   }
+  .footer-form__field {
+    width: 100%;
+  }
   .footer-three-box {
     width: 100%;
   }
