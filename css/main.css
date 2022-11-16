@@ -1209,13 +1209,16 @@ a {
   fill: #2196F3;
 }
 
-.mobile-menu__close-button:hover + .mobile-menu__icon {
+.mobile-menu__close-button:hover .mobile-menu__icon {
   fill: #2196f3;
 }
 
 .border__burger-menu {
   border: none;
   background-color: #ffffff;
+}
+.border__burger-menu:hover, .border__burger-menu:focus .border__icon {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -1545,6 +1548,9 @@ a {
   }
   .footer-form__input {
     margin-bottom: 30px;
+  }
+  .footer-form__field {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
