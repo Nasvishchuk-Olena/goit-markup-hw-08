@@ -637,6 +637,10 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .footer-general-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -651,8 +655,9 @@ a {
     margin-left: 0px;
   }
   .logo-studio.footer__logo-studio {
-    text-align: center;
-    margin-bottom: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .adress-link {
     text-align: center;
@@ -672,7 +677,15 @@ a {
     margin-left: 0px;
   }
   .footer-field-label {
-    text-align: inherit;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box-two {
+    margin-left: 70px;
+  }
+  .footer-three-box {
+    margin-left: 93px;
   }
 }
 .footer-general-box {
@@ -692,14 +705,6 @@ a {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.footer-box-two {
-  margin-left: 70px;
-}
-
-.footer-three-box {
-  margin-left: 93px;
 }
 
 .footer-form {
