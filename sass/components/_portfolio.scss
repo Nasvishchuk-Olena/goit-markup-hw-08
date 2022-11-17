@@ -140,3 +140,31 @@
     opacity: 1;
 }
 
+// Adaptive-portfolio
+
+
+
+@media screen and (max-width: 767px) {
+ .buttons-set{flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;}  
+        .promo {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            
+        }
+}
+.cards-set{justify-content: center;}
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{
+    .cards-set__item{width: calc((100% - 60px) / 2)}
+.promo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.cards-set {
+    justify-content:flex-start;
+}
+
+}
