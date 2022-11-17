@@ -1577,6 +1577,10 @@ a {
   .footer-three-box .footer-field-label {
     text-align: center;
   }
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .footer-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
