@@ -125,11 +125,10 @@ width: calc((100% - 90px) / 4);}
     @media screen and (min-width:768px)
     {flex-direction: row;
         flex-wrap: wrap;
-     
    }
    @media screen and (min-width:1200px) {
-       flex-direction: row;
-       flex-wrap:nowrap;
+flex-direction: row;
+flex-wrap:nowrap;
 
    }
 }
