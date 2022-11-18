@@ -13,16 +13,14 @@ overflow: scroll;
 }
 
 .modal {
-    @media screen and(max-width:480) {
+    @media screen and(min-width:480) {
     position: absolute;
         top: 50%;
-        left: 20px;
-        transform: translate(-50%) scale(1);
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+   width:450px
     }
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    
     border-radius: 4px;
     // width: 528px;
 
